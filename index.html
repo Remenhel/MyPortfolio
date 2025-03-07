@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>RemCreations</title>
+</head>
+<body>
+
+    <!--Navbar-->
+        <nav>
+            <ul class="side-bar">
+                <li onclick=hideSidebar()><a href="#"><img src="./clsoe.svg"></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#qualifications">Qualifications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Rem<span>Creations</span></a></li>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="hideOnMobile"><a href="#qualifications">Qualifications</a></li>
+                <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+                <li class="hideOnMobile"><a href="#achievements">Achievements</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><img src="./menu.svg"></a></li>
+            </ul>
+        </nav>
+    
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.side-bar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar() {
+                const sidebar = document.querySelector('.side-bar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+
+            <!-- Home Section -->
+
+            <header>
+                <section class="hero-content" id="home">
+
+                    <h1>Welcome to Rem<span>Creations</span></h1>
+                    <p>Illustrator|Graphic Designer|Casual Gamer|Future Game Developer</p>
+                    <a href="CV.pdf" class="dl-btn" download target="_blank">Check my CV</a>
+             </header>
+
+                <!--About Section-->
+
+                <section class="about" id="about">
+                    <div class="main">
+                        <img src="images/Fuyuko.gif">
+                            <div class="about-text">
+                                <h1>About Rem</h1>
+                                <h5><span>Illustrator</span> | <span>Future Game Developer</span></h5>
+                                <p>Ayo!<br>My name is Remenhel Barlongay, a student from National College of Science and Technology as BSCoE - 12E1.<br>It's nice to meet you. A woman who can create <span><em>Digital art</em></span> sometimes she draws <span><em>Traditional art</em></span>. She also loves to improve and discover kind of technologies such as computers. Since she was a kid, <span>drawing is her ultimate passion</span> and she loves to do it using the anime style that inspired by various <span><em>animators and artists.</em></span><br><br><strong>Stay motivated and thank you for visiting this site!</strong></p></p>
+                                <a href="./error.html" class="btn" target="_blank">READ MORE</a>
+                            </div>
+                        </div>
+                </section>
+
+            <!--Qualifications Section-->
+
+    <div class="qualifications" id="qualifications">
+        <h1 class="heading">QUALIFICATIONS</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/other_images/q_images/time.png" alt="">
+                     <h3>TIME EFFICIENT</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="box">
+                <img src="./images/other_images/q_images/com.png" alt="">
+                    <h3>GOOD COMMUNICATION</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+            </div>
+            <div class="box">
+                <img src="images/other_images/q_images/task.png" alt="">
+                <h3>FLEXIBLE TASK & ATTENTIVENESS</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="box">
+                <img src="images/other_images/q_images/speak.png" alt="">
+                <h3>FLUENT SPEAKING ENGLISH/FLIPINO</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Skills Section-->
+
+    <div class="skills" id="skills">
+        <div class="main_title">
+            <h1>REM'S SKILLS</h1>
+            <p>Which one of them she's good at?</p>
+        </div>
+        <div class="row">
+            <!--Left Section-->
+            <section class="col">
+                <div class="sub-title">
+                    <h2>ART SKILLS</h2>
+                </div>
+                    <div class="skills_container">
+                        <div class="skill">
+                            <div class="subject">SKETCH</div>
+                            <div class="progress_bar" value="85%">
+                                <div class="progress_line" style="max-width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="skills_container">
+                            <div class="skill">
+                                <div class="subject">DIGITAL</div>
+                                <div class="progress_bar" value="94%">
+                                    <div class="progress_line" style="max-width: 94%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="skills_container">
+                                <div class="skill">
+                                    <div class="subject">TRADITIONAL</div>
+                                    <div class="progress_bar" value="90%">
+                                        <div class="progress_line" style="max-width: 90%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="skills_container">
+                                    <div class="skill">
+                                        <div class="subject">PAINTING</div>
+                                        <div class="progress_bar" value="50%">
+                                            <div class="progress_line" style="max-width: 50%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+            </section>
+
+            <!--Right Section-->
+
+            <section class="col">
+                <div class="sub-title">
+                    <h2>OTHER SKILLS</h2>
+                </div>
+                    <div class="skills_container">
+                        <div class="skill">
+                            <div class="subject">PHOTO/VIDEO EDITING</div>
+                            <div class="progress_bar" value="57%">
+                                <div class="progress_line" style="max-width: 57%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="skills_container">
+                            <div class="skill">
+                                <div class="subject">GAMING (FPS, VISUAL NOVEL, RPG, ETC.)</div>
+                                <div class="progress_bar" value="72%">
+                                    <div class="progress_line" style="max-width: 72%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="skills_container">
+                                <div class="skill">
+                                    <div class="subject">PROGRAMMING LANGUAGE</div>
+                                    <div class="progress_bar" value="45%">
+                                        <div class="progress_line" style="max-width: 45%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="skills_container">
+                                    <div class="skill">
+                                        <div class="subject">COOKING</div>
+                                        <div class="progress_bar" value="83%">
+                                            <div class="progress_line" style="max-width: 83%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                </section>
+        </div>
+    </div>
+
+    <!--Achievements-->
+    <section id="achievements">
+        <div class="achievements">
+            <div class="main_title">
+                <h1>REM'S ACHIEVEMENTS</h1>
+            </div>
+                <div class="timeline">
+                    <div class="card_area">
+                        <div class="card">
+                            <img src="./images/other_images/a_images/Astaroth.png">
+                            <div class="overlay">
+                                <h2>ASTAROTH FAN ART CONTEST</h2>
+                                <small>AUGUST 2024</small>
+                                <h4>2ND PLACE</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                <a href="./error.html" target="_blank">READ MORE</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/other_images/a_images/art competition.png">
+                            <div class="overlay">
+                                <h2>INTRAMURALS ART CONTEST</h2>
+                                <small>2020, 2021</small>
+                                <h4>1ST RUNNER UP, 2ND RUNNER UP</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                <a href="./error.html" target="_blank">READ MORE</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/other_images/a_images/media.jpg">
+                            <div class="overlay">
+                                <h2>MEDIA CONVERGENCE</h2>
+                                <small>2016, 2017</small>
+                                <h4>ENGLISH COLLABORATIVE (EDITORIAL CARTOONING) - 1ST PLACE</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                <a href="./error.html" target="_blank">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+    </section>
+
+    <!--Contact-->
+    <section id="contact">
+        <h1>CONTACT REM</h1>
+        <h4><a href="mailto:barlongay.remenhel@ncst.edu.ph" target="_blank" class="contact-button">GMAIL</a></h4>
+        <h4><a href="https://www.facebook.com/rem.nonaybarlongay" target="_blank" class="contact-button">FACEBOOK</a></h4>
+    </section>
+
+    <!--Footer-->
+    
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 RemCreations. All Right Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
