@@ -201,7 +201,7 @@ header {
 
 .about img {
     height: auto;
-    width: 540px;
+    width: 100%;
     border-radius: 5px;
 }
 
