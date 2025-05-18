@@ -76,3 +76,10 @@ const observer = new IntersectionObserver(entries => {
 sections.forEach(section => {
     observer.observe(section);
 });
+
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    console.log("Received request:", request);
+
+    sendResponse({});
+    return true;
+});
