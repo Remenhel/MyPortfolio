@@ -72,22 +72,3 @@ const observer = new IntersectionObserver(entries => {
 }, {
     threshold: 0.1,
 });
-
-sections.forEach(section => {
-    observer.observe(section);
-});
-
-chrome.runtime.onMessage.addListener(
-  function(request, sender, sendResponse) {
-    console.log(request);
-    sendResponse({});
-  }
-);
-chrome.runtime.onMessage.addListener(
-  function(request, sender, sendResponse) {
-    someAsyncOperation(request, function(response) {
-      sendResponse(response);
-    });
-    return true;
-  }
-);
