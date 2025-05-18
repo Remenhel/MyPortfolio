@@ -77,9 +77,17 @@ sections.forEach(section => {
     observer.observe(section);
 });
 
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    console.log("Received request:", request);
-
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+    console.log(request);
     sendResponse({});
+  }
+);
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+    someAsyncOperation(request, function(response) {
+      sendResponse(response);
+    });
     return true;
-});
+  }
+);
