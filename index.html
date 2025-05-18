@@ -7,7 +7,7 @@
     <title>RemCreations</title>
 </head>
 <body>
-
+    <script src="./script.js"></script>
     <!--Navbar-->
         <nav>
             <ul class="side-bar">
@@ -30,17 +30,11 @@
                 <li class="menu-button" onclick=showSidebar()><a href="#"><img src="./menu.svg"></a></li>
             </ul>
         </nav>
-    
-        <script>
-            function showSidebar() {
-                const sidebar = document.querySelector('.side-bar')
-                sidebar.style.display = 'flex'
-            }
-            function hideSidebar() {
-                const sidebar = document.querySelector('.side-bar')
-                sidebar.style.display = 'none'
-            }
-        </script>
+
+        <!--Anchor Links-->
+
+        <button id="scrollTopBtn" style="display:none;position:fixed;bottom:20px;right:20px;padding:10px 15px;border:none;border-radius:5px;background:#333;color:#fff;cursor:pointer;">Top</button>
+
 
             <!-- Home Section -->
 
