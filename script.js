@@ -72,3 +72,17 @@ const observer = new IntersectionObserver(entries => {
 }, {
     threshold: 0.1,
 });
+
+sections.forEach(section => {
+    observer.observe(section);
+});
+
+// loading screen
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
+  loader.style.opacity = "0";
+  loader.style.transition = "opacity 3s ease";
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 500);
+});
