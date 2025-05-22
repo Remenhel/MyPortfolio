@@ -25,14 +25,15 @@ function animateBars() {
     const sections = document.querySelectorAll('section, .qualifications, .skills');
     const navLinks = document.querySelectorAll('nav ul li a[href^="#"]');
 
-    function showSidebar() {
-                const sidebar = document.querySelector('.side-bar')
-                sidebar.style.display = 'flex'
-            }
-            function hideSidebar() {
-                const sidebar = document.querySelector('.side-bar')
-                sidebar.style.display = 'none'
-            }
+   //menu sidebar
+    function showSidebar(event) {
+        event.preventDefault();
+        document.querySelector('.side-bar').style.display = 'flex';
+    }
+    function hideSidebar(event) {
+        event.preventDefault();
+        document.querySelector('.side-bar').style.display = 'none';
+    }
 
             window.onscroll = function () {
     const scrollBtn = document.getElementById("scrollTopBtn");
