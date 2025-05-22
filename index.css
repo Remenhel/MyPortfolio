@@ -235,6 +235,7 @@ header {
     height: auto;
     width: 400px;
     border-radius: 5px;
+    border-radius: 2000px;
 }
 
 .about-text {
